@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: plogr_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/plogr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plogr/plogr_{{ version }}.tar.gz
   sha256: 0e63ba2e1f624005fe25c67cdd403636a912e063d682eca07f2f1d65e9870d29
 
 build:
-  noarch: generic
   merge_build_host: true  # [win]
   number: 1003
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -39,16 +38,10 @@ about:
   license: MIT
   summary: " A simple header-only logging library for C++. Add 'LinkingTo: plogr' to 'DESCRIPTION', and '#include <plogr.h>' in your C++ modules to use it."
   license_family: MIT
-
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
+
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
