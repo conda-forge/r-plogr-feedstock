@@ -1,11 +1,11 @@
-About r-plogr
-=============
+About r-plogr-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-plogr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/krlmlr/plogr#readme
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-plogr-feedstock/blob/main/LICENSE.txt)
 
 Summary:  A simple header-only logging library for C++. Add 'LinkingTo: plogr' to 'DESCRIPTION', and '#include <plogr.h>' in your C++ modules to use it.
 
